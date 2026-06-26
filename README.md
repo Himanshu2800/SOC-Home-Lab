@@ -52,7 +52,7 @@ All virtual machines were deployed on Google Cloud Platform (asia-south2, Delhi 
 - Severity: Medium (Level 5)
 - MITRE: T1110.001, T1021.004 — Credential Access, Lateral Movement
 
-[📄 View Full IR Report](Reports/IR-001-Nmap-Scan.md.)
+[📄 View Full IR Report](Reports/IR-001-Nmap-Scan.md)
 
 ---
 
