@@ -67,7 +67,7 @@ All virtual machines were deployed on Google Cloud Platform (asia-south2, Delhi 
 - Severity: **Critical (Level 12)**
 - MITRE: T1110, T1078 — Credential Access, Privilege Escalation
 
-[📄 View Full IR Report](reports/IR-002-Brute-Force.md)
+[📄 View Full IR Report](Reports/IR-002-Brute-Force.md)
 
 ---
 
@@ -82,7 +82,7 @@ All virtual machines were deployed on Google Cloud Platform (asia-south2, Delhi 
 - Severity: Medium (Level 3)
 - MITRE: T1548.003, T1059.004 — Privilege Escalation, Execution
 
-[📄 View Full IR Report](reports/IR-003-Reverse-Shell.md)
+[📄 View Full IR Report](Reports/IR-003-Reverse-Shell.md)
 
 ---
 
