@@ -31,8 +31,8 @@
 | 17:06:33 UTC | Wazuh critical alert — auth failures followed by success (Level 12) |
 
 ## Investigation
-- **Source IP:** 10.190.0.4 (kali-attacker)
-- **Target IP:** 10.190.0.7 (victim-machine)
+- **Source IP:** 10.190.0.x (kali-attacker)
+- **Target IP:** 10.190.0.x (victim-machine)
 - **Tool Used:** Hydra v9.1
 - **Attack Type:** SSH brute force — dictionary attack using rockyou.txt
 - **Credential Compromised:** root / ROOT
