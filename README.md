@@ -37,8 +37,8 @@ All virtual machines were deployed on Google Cloud Platform (asia-south2, Delhi 
 ---
 
 ## 🏗️ Architecture
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7c5c8d8f-0f89-4e0f-9224-f6904226110e" />
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/65d80363-82c9-4ad6-bfaa-ac94aaac733c" />
 ## ⚔️ Attack Scenarios
 
 ### Attack #001 — Network Reconnaissance
