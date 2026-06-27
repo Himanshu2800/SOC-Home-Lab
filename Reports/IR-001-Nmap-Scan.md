@@ -29,8 +29,8 @@
 | 16:49:26 UTC | Wazuh alert fired — non-existent user login attempt |
 
 ## Investigation
-- **Source IP:** 10.190.0.4 (kali-attacker)
-- **Target IP:** 10.190.0.7 (victim-machine)
+- **Source IP:** 10.190.0.x (kali-attacker)
+- **Target IP:** 10.190.0.x (victim-machine)
 - **Tool Used:** Nmap service/script scan
 - **Port Targeted:** 22 (SSH)
 - **Outcome:** No successful login — probe only
